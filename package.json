@@ -1,0 +1,33 @@
+{
+  "name": "parth_proshop",
+  "version": "1.0.0",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parthsahu95/parth_Pro_Shop.git"
+  },
+  "author": "Parth Sahu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parthsahu95/parth_Pro_Shop/issues"
+  },
+  "homepage": "https://github.com/parthsahu95/parth_Pro_Shop#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.3"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "nodemon": "^2.0.19"
+  }
+}
